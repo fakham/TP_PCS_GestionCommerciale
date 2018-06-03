@@ -64,5 +64,11 @@ namespace TP_PCS_GestionCommerciale2
         {
             Program.ChargerDataSet();
         }
+
+        private void filterArticlesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_FilterArticles f = new Form_FilterArticles();
+            f.Show();
+        }
     }
 }

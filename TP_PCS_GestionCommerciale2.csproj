@@ -56,6 +56,18 @@
     <Compile Include="Form_ConsultationCommande.Designer.cs">
       <DependentUpon>Form_ConsultationCommande.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_DetailCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DetailCommande.Designer.cs">
+      <DependentUpon>Form_DetailCommande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_FilterArticles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_FilterArticles.Designer.cs">
+      <DependentUpon>Form_FilterArticles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_ListeClientsVille.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +111,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ConsultationCommande.resx">
       <DependentUpon>Form_ConsultationCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DetailCommande.resx">
+      <DependentUpon>Form_DetailCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_FilterArticles.resx">
+      <DependentUpon>Form_FilterArticles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ListeClientsVille.resx">
       <DependentUpon>Form_ListeClientsVille.cs</DependentUpon>

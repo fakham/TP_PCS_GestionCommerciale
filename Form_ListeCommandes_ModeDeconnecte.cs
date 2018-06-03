@@ -47,6 +47,12 @@ namespace TP_PCS_GestionCommerciale2
         {
             if (e.ColumnIndex == 3)
                 dataGridView_cmds.CurrentRow.Cells[3].Value = !((bool)dataGridView_cmds.CurrentRow.Cells[3].Value);
+            if (e.ColumnIndex == 2)
+            {
+                Form_DetailCommande f = new Form_DetailCommande();
+                f.numCom = dataGridView_cmds.CurrentRow.Cells[0].Value.ToString();
+                f.Show();
+            }
         }
 
         private void button_Supprimer_Click(object sender, EventArgs e)

@@ -39,6 +39,7 @@
             this.consultationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modeDeconnectéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listeCommandesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.filterArticlesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -119,7 +120,8 @@
             // modeDeconnectéToolStripMenuItem
             // 
             this.modeDeconnectéToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listeCommandesToolStripMenuItem});
+            this.listeCommandesToolStripMenuItem,
+            this.filterArticlesToolStripMenuItem});
             this.modeDeconnectéToolStripMenuItem.Name = "modeDeconnectéToolStripMenuItem";
             this.modeDeconnectéToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
             this.modeDeconnectéToolStripMenuItem.Text = "Mode Deconnecté";
@@ -130,6 +132,13 @@
             this.listeCommandesToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.listeCommandesToolStripMenuItem.Text = "Liste Commandes";
             this.listeCommandesToolStripMenuItem.Click += new System.EventHandler(this.listeCommandesToolStripMenuItem_Click);
+            // 
+            // filterArticlesToolStripMenuItem
+            // 
+            this.filterArticlesToolStripMenuItem.Name = "filterArticlesToolStripMenuItem";
+            this.filterArticlesToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.filterArticlesToolStripMenuItem.Text = "Filter Articles";
+            this.filterArticlesToolStripMenuItem.Click += new System.EventHandler(this.filterArticlesToolStripMenuItem_Click);
             // 
             // Menu
             // 
@@ -161,5 +170,6 @@
         private System.Windows.Forms.ToolStripMenuItem consultationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modeDeconnectéToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listeCommandesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem filterArticlesToolStripMenuItem;
     }
 }
