@@ -37,6 +37,8 @@
             this.commandeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modeDeconnectéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listeCommandesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +46,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientToolStripMenuItem,
-            this.commandeToolStripMenuItem});
+            this.commandeToolStripMenuItem,
+            this.modeDeconnectéToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(618, 24);
@@ -102,16 +105,31 @@
             // ajouterToolStripMenuItem
             // 
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.ajouterToolStripMenuItem.Text = "Ajouter";
             this.ajouterToolStripMenuItem.Click += new System.EventHandler(this.ajouterToolStripMenuItem_Click);
             // 
             // consultationToolStripMenuItem
             // 
             this.consultationToolStripMenuItem.Name = "consultationToolStripMenuItem";
-            this.consultationToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.consultationToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.consultationToolStripMenuItem.Text = "Consultation";
             this.consultationToolStripMenuItem.Click += new System.EventHandler(this.consultationToolStripMenuItem_Click);
+            // 
+            // modeDeconnectéToolStripMenuItem
+            // 
+            this.modeDeconnectéToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listeCommandesToolStripMenuItem});
+            this.modeDeconnectéToolStripMenuItem.Name = "modeDeconnectéToolStripMenuItem";
+            this.modeDeconnectéToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
+            this.modeDeconnectéToolStripMenuItem.Text = "Mode Deconnecté";
+            // 
+            // listeCommandesToolStripMenuItem
+            // 
+            this.listeCommandesToolStripMenuItem.Name = "listeCommandesToolStripMenuItem";
+            this.listeCommandesToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.listeCommandesToolStripMenuItem.Text = "Liste Commandes";
+            this.listeCommandesToolStripMenuItem.Click += new System.EventHandler(this.listeCommandesToolStripMenuItem_Click);
             // 
             // Menu
             // 
@@ -122,6 +140,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Menu";
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -140,5 +159,7 @@
         private System.Windows.Forms.ToolStripMenuItem commandeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajouterToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modeDeconnectéToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listeCommandesToolStripMenuItem;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace TP_PCS_GestionCommerciale2
 {
@@ -51,6 +52,17 @@ namespace TP_PCS_GestionCommerciale2
         {
             Form_ConsultationCommande f = new Form_ConsultationCommande();
             f.Show();
+        }
+
+        private void listeCommandesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_ListeCommandes_ModeDeconnecte f = new Form_ListeCommandes_ModeDeconnecte();
+            f.Show();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            Program.ChargerDataSet();
         }
     }
 }

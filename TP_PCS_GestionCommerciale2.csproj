@@ -62,6 +62,12 @@
     <Compile Include="Form_ListeClientsVille.Designer.cs">
       <DependentUpon>Form_ListeClientsVille.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_ListeCommandes_ModeDeconnecte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ListeCommandes_ModeDeconnecte.Designer.cs">
+      <DependentUpon>Form_ListeCommandes_ModeDeconnecte.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_ListeNomClients.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ListeClientsVille.resx">
       <DependentUpon>Form_ListeClientsVille.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ListeCommandes_ModeDeconnecte.resx">
+      <DependentUpon>Form_ListeCommandes_ModeDeconnecte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ListeNomClients.resx">
       <DependentUpon>Form_ListeNomClients.cs</DependentUpon>
