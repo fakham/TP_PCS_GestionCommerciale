@@ -153,6 +153,7 @@
             this.button_imprimer.TabIndex = 11;
             this.button_imprimer.Text = "Imprimer";
             this.button_imprimer.UseVisualStyleBackColor = true;
+            this.button_imprimer.Click += new System.EventHandler(this.button_imprimer_Click);
             // 
             // Form_FilterArticles
             // 

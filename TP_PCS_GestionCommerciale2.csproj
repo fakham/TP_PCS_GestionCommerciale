@@ -32,8 +32,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +51,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport_parametres.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport_parametres.rpt</DependentUpon>
+    </Compile>
     <Compile Include="Form_AjouterCommande.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,11 +86,23 @@
     <Compile Include="Form_DetailCommande.Designer.cs">
       <DependentUpon>Form_DetailCommande.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_EtatClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EtatClient.Designer.cs">
+      <DependentUpon>Form_EtatClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_FilterArticles.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_FilterArticles.Designer.cs">
       <DependentUpon>Form_FilterArticles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ImprimerArticles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ImprimerArticles.Designer.cs">
+      <DependentUpon>Form_ImprimerArticles.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_ListeClientsVille.cs">
       <SubType>Form</SubType>
@@ -106,6 +142,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport_parametres.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport_parametres.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_AjouterCommande.resx">
       <DependentUpon>Form_AjouterCommande.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,8 +163,14 @@
     <EmbeddedResource Include="Form_DetailCommande.resx">
       <DependentUpon>Form_DetailCommande.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_EtatClient.resx">
+      <DependentUpon>Form_EtatClient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_FilterArticles.resx">
       <DependentUpon>Form_FilterArticles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ImprimerArticles.resx">
+      <DependentUpon>Form_ImprimerArticles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ListeClientsVille.resx">
       <DependentUpon>Form_ListeClientsVille.cs</DependentUpon>
@@ -157,6 +211,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

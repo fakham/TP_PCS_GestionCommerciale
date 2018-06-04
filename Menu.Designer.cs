@@ -40,6 +40,7 @@
             this.modeDeconnectéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listeCommandesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.filterArticlesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.etatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +62,8 @@
             this.listeNomClientsToolStripMenuItem,
             this.listeClientsParVilleToolStripMenuItem,
             this.nombreClientsParVilleToolStripMenuItem,
-            this.mAJClientToolStripMenuItem});
+            this.mAJClientToolStripMenuItem,
+            this.etatToolStripMenuItem});
             this.clientToolStripMenuItem.Name = "clientToolStripMenuItem";
             this.clientToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.clientToolStripMenuItem.Text = "Client";
@@ -140,6 +142,13 @@
             this.filterArticlesToolStripMenuItem.Text = "Filter Articles";
             this.filterArticlesToolStripMenuItem.Click += new System.EventHandler(this.filterArticlesToolStripMenuItem_Click);
             // 
+            // etatToolStripMenuItem
+            // 
+            this.etatToolStripMenuItem.Name = "etatToolStripMenuItem";
+            this.etatToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.etatToolStripMenuItem.Text = "Etat";
+            this.etatToolStripMenuItem.Click += new System.EventHandler(this.etatToolStripMenuItem_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,5 +180,6 @@
         private System.Windows.Forms.ToolStripMenuItem modeDeconnectéToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listeCommandesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem filterArticlesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem etatToolStripMenuItem;
     }
 }

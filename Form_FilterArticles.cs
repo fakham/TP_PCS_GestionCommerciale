@@ -60,5 +60,11 @@ namespace TP_PCS_GestionCommerciale2
             Program.DS.WriteXml("Articles.xml", XmlWriteMode.DiffGram);
             MessageBox.Show("Export terminé!");
         }
+
+        private void button_imprimer_Click(object sender, EventArgs e)
+        {
+            Form_ImprimerArticles f = new Form_ImprimerArticles();
+            f.Show();
+        }
     }
 }

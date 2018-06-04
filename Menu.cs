@@ -70,5 +70,11 @@ namespace TP_PCS_GestionCommerciale2
             Form_FilterArticles f = new Form_FilterArticles();
             f.Show();
         }
+
+        private void etatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_EtatClient f = new Form_EtatClient();
+            f.Show();
+        }
     }
 }
